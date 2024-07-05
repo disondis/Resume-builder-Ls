@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="resumeporactice.css">
+    <script type="text/javascript" src="resumepractice.js"></script>
+</head>
+<body>
+    <div class="resume">
+        <h1>resume builder</h1>
+        <div class="main">
+        </div>
+        <div class="form">
+            <form class="register">
+                <label>project tittle</label><input type="text" placeholder="type your project tittle" onkeyup="box1(this,'project_tittle')"/><br><br>
+                <label>name</label><input type="text" placeholder="type your name" onkeyup="box1(this,'name')"/><br><br>
+                <label>age</label><input type="number" placeholder="type your age" onkeyup="box1(this,'age')"/><br><br>
+                <label>contact</label><input type="number" placeholder="type your contact" onkeyup="box1(this,'contact')"/><br><br>
+                <label>declaration</label><input type="text" placeholder="type your declaration" onkeyup="box1(this,'declaration')"/><br><br>
+                <label>experiance</label><input type="text" placeholder="type your experience" onkeyup="box1(this,'experience')"/><br><br>
+                <label>email</label><input type="text" placeholder="type your email" onkeyup="box1(this,'email')"/><br><br>
+                <label>skill</label><input type="text" placeholder="type your skill" id="skill"/><button type="button" onclick="skills('skills','skill')">add</button><br><br>
+                <label>hobbies</label><input type="text" placeholder="type your hobbies" id="hobby"/><button type="button" onclick="skills('hobbies','hobby')">add</button><br><br>
+                <label>language</label><input type="text" placeholder="type your language" id="language"/><button type="button" onclick="skills('languages','language')">add</button><br><br>
+
+
+            <h1>pesrsonel details</h1>  
+                <label>fathername</label><input type="text" placeholder="TYPE YOUR FATHER NAME" onkeyup="box1(this,'fathername','personel_details')"><br><br>
+                <label>mothername</label><input type="text" placeholder="TYPE YOUR mother NAME" onkeyup="box1(this,'mother_name','personel_details')">
+                <h1>Education dettails</h1>
+                <div class="education">
+                    <label>institute name</label><input type="text" placeholder="enter your institute name" onkeyup="box1(this,'education',false,0,'institute_name')">
+                    <label>percentage of mark</label><input type="number" placeholder="percentage of mark" onkeyup="box1(this,'education',false,0,'percentage')">
+                    <label>passed out</label><input type="number" placeholder="yearof passed out" onkeyup="box1(this,'education',false,0,'year')">
+
+                </div>
+                <div class="education">
+                    <label>institute name</label><input type="text" placeholder="enter your institute name" onkeyup="box1(this,'education',false,1,'institute_name')">
+                    <label>percentage of mark</label><input type="number" placeholder="percentage of mark" onkeyup="box1(this,'education',false,1,'percentage')">
+                    <label>passed out</label><input type="number" placeholder="yearof passed out" onkeyup="box1(this,'education',false,1,'year')">
+
+                </div>
+                <div class="education">
+                    <label>institute name</label><input type="text" placeholder="enter your institute name" onkeyup="box1(this,'education',false,2,'institute_name')">
+                    <label>percentage of mark</label><input type="number" placeholder="percentage of mark" onkeyup="box1(this,'education',false,2,'percentage')">
+                    <label>passed out</label><input type="number" placeholder="yearof passed out" onkeyup="box1(this,'education',false,2,'year')">
+
+                </div>
+
+                <h1>project dettails</h1>
+                <div class="project">
+                    <label>project name</label><input type="text" placeholder="enter your project name" onkeyup="box1(this,'project',false,0,'tittle')">
+                   <label>role</label><input type="text" placeholder="type your role" onkeyup="box1(this,'project',false,0,'role')">
+                    <label>project year</label><input type="number" placeholder="project year" onkeyup="box1(this,'project',false,0,'year')">
+
+                </div>
+                <div class="project">
+                    <label>project name</label><input type="text" placeholder="enter your project name" onkeyup="box1(this,'project',false,1,'tittle')">
+                    <label>role</label><input type="text" placeholder="type your role" onkeyup="box1(this,'project',false,1,'role')">
+                    <label>project year</label><input type="number" placeholder="project year" onkeyup="box1(this,'project',false,1,'year')">
+
+                </div>
+                <div class="project">
+                    <label>project name</label><input type="text" placeholder="enter your project name" onkeyup="box1(this,'project',false,2,'tittle')">
+                    <label>role</label><input type="text" placeholder="type your role" onkeyup="box1(this,'project',false,2,'role')">
+                    <label>project year</label><input type="number" placeholder="project your role" onkeyup="box1(this,'project',false,2,'year')">
+
+                </div>
+
+                <h1>work experiance</h1>
+                <div class="experiance">
+                    <label>company name</label><input type="text" placeholder="enter your company name" onkeyup="box1(this,'experiance',false,0,'company_name')">
+                   <label>role</label><input type="text" placeholder="type your role" onkeyup="box1(this,'experiance',false,0,'jobrole')">
+                    <label>year</label><input type="number" placeholder="year" onkeyup="box1(this,'experiance',false,0,'year')">
+
+                </div>
+                <div class="experiance">
+                    <label>company name</label><input type="text" placeholder="enter your company name" onkeyup="box1(this,'experiance',false,1,'company_name')">
+                    <label>role</label><input type="text" placeholder="type your role" onkeyup="box1(this,'experiance',false,1,'jobrole')">
+                    <label>year</label><input type="number" placeholder="year" onkeyup="box1(this,'experiance',false,1,'year')">
+
+                </div>
+                <div class="experiance">
+                    <label>company name</label><input type="text" placeholder="enter your company name" onkeyup="box1(this,'experiance',false,2,'company_name')">
+                    <label>role</label><input type="text" placeholder="type your role" onkeyup="box1(this,'experiance',false,2,'jobrole')">
+                    <label>year</label><input type="number" placeholder="year" onkeyup="box1(this,'experiance',false,2,'year')">
+
+                </div>
+                <button type="button" onclick="saveresume()">submit</button>
+            </form>
+            
+            
+
+        </div>
+        <div class="codereview">
+            <pre id="review">
+                
+            </pre>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>  
